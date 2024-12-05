@@ -1,43 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap');
+/* Importing Google Fonts (in this case, Instrument Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap'); 
+
+/* CSS Reset - Sets all margins and paddings to zero for full customization*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 
 :root {
   --background: #2D2B4D;
   --foreground: #ffffff;
 }
 
+/* Types - Use this when you want to style a TYPE of component*/
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
   background-image: url('images/background-image.png');
-  background-size: auto; /* Adjust as needed */
+  background-size: auto; 
   background-position: center;
-  background-attachment: scroll; /* Make the image scrollable */
+  background-attachment: scroll; 
   position: relative;
-  min-height: 100vh; /* Ensure the body covers the entire viewport */
+  min-height: 100vh;
 }
 
 body::before {
   content: '';
-  position: fixed; /* Ensure the overlay covers the entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(45, 43, 77, 0.92); /* Adjust the color and opacity as needed */
+  background-color: rgba(45, 43, 77, 0.92); 
   z-index: -1;
-  pointer-events: none; /* Ensure the overlay does not interfere with other elements */
+  pointer-events: none; 
 }
 
-.main-info {
+footer {
     text-align: center;
-    padding-left: 20px; 
-    padding-right: 20px; 
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
 }
 
-#main-description {
+/* Classes - Use this when you want to style a GROUP of components */
+.main-info {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    text-align: center;
+    align-items: center; /* Center align items horizontally */
+    gap: 35px; /* Adjust the vertical gap between elements */
+    padding-left: 15%; 
+    padding-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+}
+
+.projects {
     padding-left: 20%; 
     padding-right: 20%;
+}
+
+/* IDs - Use this when you want to style a SPECIFIC component */
+#main-description {
+    padding-left: 10%; 
+    padding-right: 10%;
     font-size: 20px;
     font-weight: normal;
 }
