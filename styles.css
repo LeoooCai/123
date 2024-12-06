@@ -52,10 +52,10 @@ footer {
 /* Classes - Use this when you want to style a GROUP of components */
 .main-info {
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
+    flex-direction: column; 
     text-align: center;
-    align-items: center; /* Center align items horizontally */
-    gap: 35px; /* Adjust the vertical gap between elements */
+    align-items: center; 
+    gap: 35px; 
     padding-left: 15%; 
     padding-right: 15%;
     margin-top: 5%;
@@ -65,6 +65,25 @@ footer {
 .projects {
     padding-left: 20%; 
     padding-right: 20%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 40%; 
+  justify-content: space-between; 
+  padding-left: 15%; 
+  padding-right: 15%;
+  padding-top: 30px;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 25px; 
+  color: white; 
 }
 
 /* IDs - Use this when you want to style a SPECIFIC component */
