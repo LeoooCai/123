@@ -17,6 +17,24 @@ DISCLAIMER: This site was designed with basic CSS concepts; responsiveness and a
 /* Importing Google Fonts (in this case, Instrument Sans) */
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap");
 
+/* Media Query - Added for responsiveness, ignore this for now */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-embeds {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* CSS Reset - Sets all margins and paddings to zero for full customization*/
 * {
   margin: 0;
@@ -34,7 +52,7 @@ DISCLAIMER: This site was designed with basic CSS concepts; responsiveness and a
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Instrument Sans", Arial, Helvetica, sans-serif; 
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
   background-image: url("images/background-image.png"); /* Background Image */
   background-size: auto;
   background-position: center;
@@ -50,7 +68,12 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(45, 43, 77, 0.92); /* Background Color Overlay w/ 92% Opacity*/
+  background-color: rgba(
+    45,
+    43,
+    77,
+    0.92
+  ); /* Background Color Overlay w/ 92% Opacity*/
   z-index: -1;
   pointer-events: none;
 }
@@ -87,6 +110,11 @@ footer {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 30px;
+}
+
+.navbar-logo {
+  width: 10%;
+  height: auto;
 }
 
 .navbar-menu {
