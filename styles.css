@@ -1,16 +1,15 @@
 /* Importing Google Fonts (in this case, Instrument Sans) */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap");
 
 /* CSS Reset - Sets all margins and paddings to zero for full customization*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 :root {
-  --background: #2D2B4D;
+  --background: #2d2b4d;
   --foreground: #ffffff;
 }
 
@@ -18,63 +17,58 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
-  background-image: url('images/background-image.png');
-  background-size: auto; 
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
+  background-image: url("images/background-image.png");
+  background-size: auto;
   background-position: center;
-  background-attachment: scroll; 
+  background-attachment: scroll;
   position: relative;
   min-height: 100vh;
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(45, 43, 77, 0.92); 
+  background-color: rgba(45, 43, 77, 0.92);
   z-index: -1;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 footer {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    opacity: 0.8;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
 }
 
 /* Classes - Use this when you want to style a GROUP of components */
 .main-info {
-    display: flex;
-    flex-direction: column; 
-    text-align: center;
-    align-items: center; 
-    gap: 35px; 
-    padding-left: 15%; 
-    padding-right: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%; 
-}
-
-.projects {
-    padding-left: 20%; 
-    padding-right: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 35px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
-  align-items: center; 
-  gap: 40%; 
-  justify-content: space-between; 
-  padding-left: 15%; 
-  padding-right: 15%;
+  align-items: center;
+  gap: 35%;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 30px;
 }
 
@@ -82,14 +76,60 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 25px; 
-  color: white; 
+  gap: 25px;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 5%;
+  align-items: center;
+}
+
+.project-cols {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+  color: white;
+}
+
+.project-box h4 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.project-box a {
+  color: white;
+}
+
+.project-embeds {
+  width: 420px;
+  height: 295px;
+  border: 8px solid #9f73ab;
+  border-radius: 23px;
+  margin-bottom: 3%;
 }
 
 /* IDs - Use this when you want to style a SPECIFIC component */
 #main-description {
-    padding-left: 10%; 
-    padding-right: 10%;
-    font-size: 20px;
-    font-weight: normal;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 20px;
+  font-weight: normal;
 }
