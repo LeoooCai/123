@@ -1,3 +1,17 @@
+/* 
+This CSS stylesheet file includes the overall styling of the HTML page which we set up.
+
+Some prerequisites to understand this stylesheet:
+- https://www.w3schools.com/css/css_boxmodel.asp (CSS Box Model - a box that wraps around every HTML element, i.e. padding, border, margins etc.)
+- https://www.w3schools.com/css/css_padding.asp (Paddings - spacing withing the Box Model (inside border and margins)
+- https://www.w3schools.com/css/css_border.asp (Border - a line to outline box model components)
+- https://www.w3schools.com/css/css_margin.asp (Margins - spacing outside of all elements in the Box Model)
+- https://www.w3schools.com/cssref/css_selectors.php (.class and #id selectors, allows you to select elements from HTML)
+- https://www.w3schools.com/css/css3_flexbox.asp (Flexbox - helps to alignment elements with flexible spacing and order within a container)
+
+Feel free to search these prerequisites, as well as any other elements up in more detail to understand how it works in more detail. 
+*/
+
 /* Importing Google Fonts (in this case, Instrument Sans) */
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap");
 
@@ -8,6 +22,7 @@
   box-sizing: border-box;
 }
 
+/* Fallback Background/Foreground Colors - in case of rendering errors*/
 :root {
   --background: #2d2b4d;
   --foreground: #ffffff;
@@ -17,8 +32,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
-  background-image: url("images/background-image.png");
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif; 
+  background-image: url("images/background-image.png"); /* Background Image */
   background-size: auto;
   background-position: center;
   background-attachment: scroll;
@@ -33,7 +48,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(45, 43, 77, 0.92);
+  background-color: rgba(45, 43, 77, 0.92); /* Background Color Overlay w/ 92% Opacity*/
   z-index: -1;
   pointer-events: none;
 }
